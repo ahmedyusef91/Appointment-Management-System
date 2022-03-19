@@ -1,0 +1,29 @@
+# Add New Appointment
+
+URL: localhost:8080/stc/task/AMS/appointment/create
+Type: POST
+Body:
+	 {
+    "patient":{"patientId":"1",
+    "email": "patient@mail.com",
+        "name": "Ahmed yusef'",
+        "gender": "male",
+        "phone": "01008626026"},
+    "status":"true",
+    "date": "2022-03-01"
+    
+    
+ # Get Today Appointments
+
+URL: localhost:8080/stc/task/AMS/appointment/today
+Type: GET
+
+
+ # Cancel Appointments
+ 
+ URL: localhost:8080/stc/task/AMS/appointment/cancel/1?cancelReason=No_show
+ Type: POST
+ 
+ # Search By Date
+ URL: localhost:8080/stc/task/AMS/appointment/searchByDate?date=2022-03-22&searchDateType=HISTORY
+ Type: POST
